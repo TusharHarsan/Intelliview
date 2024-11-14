@@ -1,0 +1,1067 @@
+{
+  "annotation_results": [ {
+    "input_uri": "/test-bucket-nirvana/a new competitor to Twitter  #elonmusk #zuckerberg.mp3",
+    "segment": {
+      "start_time_offset": {
+      
+      },
+      "end_time_offset": {
+        "seconds": 40,
+        "nanos": 595351000
+      }
+    },
+    "speech_transcriptions": [ {
+      "alternatives": [ {
+        "transcript": "Instagram has launched a new companion, app for Ted's giving direct competition to the address growing so fast that it was 10 million users in just seven hours until. Now, it is more than 70 million people using it. The app is made to come up conversations and getting a huge engagement on the post, you don't have to make an account just log in with your account and he bought everything from it. Unless it is a character limit of 500 characters, a to 280 character. Limit of to do you use thread by female unmask, our team Mark Zuckerberg? Let me know in the comments.",
+        "confidence": 0.97428483,
+        "words": [ {
+          "start_time": {
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 1,
+            "nanos": 200000000
+          },
+          "word": "Instagram"
+        }, {
+          "start_time": {
+            "seconds": 1,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 1,
+            "nanos": 400000000
+          },
+          "word": "has"
+        }, {
+          "start_time": {
+            "seconds": 1,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 1,
+            "nanos": 700000000
+          },
+          "word": "launched"
+        }, {
+          "start_time": {
+            "seconds": 1,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 1,
+            "nanos": 800000000
+          },
+          "word": "a"
+        }, {
+          "start_time": {
+            "seconds": 1,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 1,
+            "nanos": 900000000
+          },
+          "word": "new"
+        }, {
+          "start_time": {
+            "seconds": 1,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 2,
+            "nanos": 500000000
+          },
+          "word": "companion,"
+        }, {
+          "start_time": {
+            "seconds": 2,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 2,
+            "nanos": 900000000
+          },
+          "word": "app"
+        }, {
+          "start_time": {
+            "seconds": 2,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 3,
+            "nanos": 300000000
+          },
+          "word": "for"
+        }, {
+          "start_time": {
+            "seconds": 3,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 3,
+            "nanos": 900000000
+          },
+          "word": "Ted's"
+        }, {
+          "start_time": {
+            "seconds": 3,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 4,
+            "nanos": 400000000
+          },
+          "word": "giving"
+        }, {
+          "start_time": {
+            "seconds": 4,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 4,
+            "nanos": 800000000
+          },
+          "word": "direct"
+        }, {
+          "start_time": {
+            "seconds": 4,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 5,
+            "nanos": 200000000
+          },
+          "word": "competition"
+        }, {
+          "start_time": {
+            "seconds": 5,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 5,
+            "nanos": 600000000
+          },
+          "word": "to"
+        }, {
+          "start_time": {
+            "seconds": 5,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 6,
+            "nanos": 800000000
+          },
+          "word": "the"
+        }, {
+          "start_time": {
+            "seconds": 6,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 7,
+            "nanos": 200000000
+          },
+          "word": "address"
+        }, {
+          "start_time": {
+            "seconds": 7,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 7,
+            "nanos": 500000000
+          },
+          "word": "growing"
+        }, {
+          "start_time": {
+            "seconds": 7,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 7,
+            "nanos": 800000000
+          },
+          "word": "so"
+        }, {
+          "start_time": {
+            "seconds": 7,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 7,
+            "nanos": 900000000
+          },
+          "word": "fast"
+        }, {
+          "start_time": {
+            "seconds": 7,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 8,
+            "nanos": 700000000
+          },
+          "word": "that"
+        }, {
+          "start_time": {
+            "seconds": 8,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 8,
+            "nanos": 900000000
+          },
+          "word": "it"
+        }, {
+          "start_time": {
+            "seconds": 8,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 9,
+            "nanos": 300000000
+          },
+          "word": "was"
+        }, {
+          "start_time": {
+            "seconds": 9,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 10
+          },
+          "word": "10"
+        }, {
+          "start_time": {
+            "seconds": 10
+          },
+          "end_time": {
+            "seconds": 10,
+            "nanos": 200000000
+          },
+          "word": "million"
+        }, {
+          "start_time": {
+            "seconds": 10,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 10,
+            "nanos": 800000000
+          },
+          "word": "users"
+        }, {
+          "start_time": {
+            "seconds": 10,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 10,
+            "nanos": 900000000
+          },
+          "word": "in"
+        }, {
+          "start_time": {
+            "seconds": 10,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 11,
+            "nanos": 300000000
+          },
+          "word": "just"
+        }, {
+          "start_time": {
+            "seconds": 11,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 11,
+            "nanos": 600000000
+          },
+          "word": "seven"
+        }, {
+          "start_time": {
+            "seconds": 11,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 11,
+            "nanos": 900000000
+          },
+          "word": "hours"
+        }, {
+          "start_time": {
+            "seconds": 11,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 12,
+            "nanos": 700000000
+          },
+          "word": "until."
+        }, {
+          "start_time": {
+            "seconds": 12,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 12,
+            "nanos": 900000000
+          },
+          "word": "Now,"
+        }, {
+          "start_time": {
+            "seconds": 12,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 13,
+            "nanos": 500000000
+          },
+          "word": "it"
+        }, {
+          "start_time": {
+            "seconds": 13,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 13,
+            "nanos": 700000000
+          },
+          "word": "is"
+        }, {
+          "start_time": {
+            "seconds": 13,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 14
+          },
+          "word": "more"
+        }, {
+          "start_time": {
+            "seconds": 14
+          },
+          "end_time": {
+            "seconds": 14
+          },
+          "word": "than"
+        }, {
+          "start_time": {
+            "seconds": 14
+          },
+          "end_time": {
+            "seconds": 14,
+            "nanos": 800000000
+          },
+          "word": "70"
+        }, {
+          "start_time": {
+            "seconds": 14,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 15
+          },
+          "word": "million"
+        }, {
+          "start_time": {
+            "seconds": 15
+          },
+          "end_time": {
+            "seconds": 15,
+            "nanos": 500000000
+          },
+          "word": "people"
+        }, {
+          "start_time": {
+            "seconds": 15,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 15,
+            "nanos": 500000000
+          },
+          "word": "using"
+        }, {
+          "start_time": {
+            "seconds": 15,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 16
+          },
+          "word": "it."
+        }, {
+          "start_time": {
+            "seconds": 16
+          },
+          "end_time": {
+            "seconds": 16,
+            "nanos": 700000000
+          },
+          "word": "The"
+        }, {
+          "start_time": {
+            "seconds": 16,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 17
+          },
+          "word": "app"
+        }, {
+          "start_time": {
+            "seconds": 17
+          },
+          "end_time": {
+            "seconds": 17,
+            "nanos": 200000000
+          },
+          "word": "is"
+        }, {
+          "start_time": {
+            "seconds": 17,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 17,
+            "nanos": 400000000
+          },
+          "word": "made"
+        }, {
+          "start_time": {
+            "seconds": 17,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 17,
+            "nanos": 500000000
+          },
+          "word": "to"
+        }, {
+          "start_time": {
+            "seconds": 17,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 17,
+            "nanos": 700000000
+          },
+          "word": "come"
+        }, {
+          "start_time": {
+            "seconds": 17,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 17,
+            "nanos": 800000000
+          },
+          "word": "up"
+        }, {
+          "start_time": {
+            "seconds": 17,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 18,
+            "nanos": 600000000
+          },
+          "word": "conversations"
+        }, {
+          "start_time": {
+            "seconds": 18,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 19
+          },
+          "word": "and"
+        }, {
+          "start_time": {
+            "seconds": 19
+          },
+          "end_time": {
+            "seconds": 19,
+            "nanos": 200000000
+          },
+          "word": "getting"
+        }, {
+          "start_time": {
+            "seconds": 19,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 19,
+            "nanos": 300000000
+          },
+          "word": "a"
+        }, {
+          "start_time": {
+            "seconds": 19,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 19,
+            "nanos": 600000000
+          },
+          "word": "huge"
+        }, {
+          "start_time": {
+            "seconds": 19,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 20,
+            "nanos": 100000000
+          },
+          "word": "engagement"
+        }, {
+          "start_time": {
+            "seconds": 20,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 20,
+            "nanos": 700000000
+          },
+          "word": "on"
+        }, {
+          "start_time": {
+            "seconds": 20,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 20,
+            "nanos": 800000000
+          },
+          "word": "the"
+        }, {
+          "start_time": {
+            "seconds": 20,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 21,
+            "nanos": 200000000
+          },
+          "word": "post,"
+        }, {
+          "start_time": {
+            "seconds": 21,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 21,
+            "nanos": 900000000
+          },
+          "word": "you"
+        }, {
+          "start_time": {
+            "seconds": 21,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 22,
+            "nanos": 200000000
+          },
+          "word": "don't"
+        }, {
+          "start_time": {
+            "seconds": 22,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 22,
+            "nanos": 400000000
+          },
+          "word": "have"
+        }, {
+          "start_time": {
+            "seconds": 22,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 22,
+            "nanos": 500000000
+          },
+          "word": "to"
+        }, {
+          "start_time": {
+            "seconds": 22,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 22,
+            "nanos": 800000000
+          },
+          "word": "make"
+        }, {
+          "start_time": {
+            "seconds": 22,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 22,
+            "nanos": 800000000
+          },
+          "word": "an"
+        }, {
+          "start_time": {
+            "seconds": 22,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 23,
+            "nanos": 100000000
+          },
+          "word": "account"
+        }, {
+          "start_time": {
+            "seconds": 23,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 23,
+            "nanos": 800000000
+          },
+          "word": "just"
+        }, {
+          "start_time": {
+            "seconds": 23,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 24
+          },
+          "word": "log"
+        }, {
+          "start_time": {
+            "seconds": 24
+          },
+          "end_time": {
+            "seconds": 24,
+            "nanos": 100000000
+          },
+          "word": "in"
+        }, {
+          "start_time": {
+            "seconds": 24,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 24,
+            "nanos": 300000000
+          },
+          "word": "with"
+        }, {
+          "start_time": {
+            "seconds": 24,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 24,
+            "nanos": 300000000
+          },
+          "word": "your"
+        }, {
+          "start_time": {
+            "seconds": 24,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 25,
+            "nanos": 200000000
+          },
+          "word": "account"
+        }, {
+          "start_time": {
+            "seconds": 25,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 26
+          },
+          "word": "and"
+        }, {
+          "start_time": {
+            "seconds": 26
+          },
+          "end_time": {
+            "seconds": 26,
+            "nanos": 100000000
+          },
+          "word": "he"
+        }, {
+          "start_time": {
+            "seconds": 26,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 26,
+            "nanos": 300000000
+          },
+          "word": "bought"
+        }, {
+          "start_time": {
+            "seconds": 26,
+            "nanos": 300000000
+          },
+          "end_time": {
+            "seconds": 26,
+            "nanos": 500000000
+          },
+          "word": "everything"
+        }, {
+          "start_time": {
+            "seconds": 26,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 27,
+            "nanos": 200000000
+          },
+          "word": "from"
+        }, {
+          "start_time": {
+            "seconds": 27,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 27,
+            "nanos": 400000000
+          },
+          "word": "it."
+        }, {
+          "start_time": {
+            "seconds": 27,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 28,
+            "nanos": 200000000
+          },
+          "word": "Unless"
+        }, {
+          "start_time": {
+            "seconds": 28,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 28,
+            "nanos": 700000000
+          },
+          "word": "it"
+        }, {
+          "start_time": {
+            "seconds": 28,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 28,
+            "nanos": 900000000
+          },
+          "word": "is"
+        }, {
+          "start_time": {
+            "seconds": 28,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 28,
+            "nanos": 900000000
+          },
+          "word": "a"
+        }, {
+          "start_time": {
+            "seconds": 28,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 29,
+            "nanos": 400000000
+          },
+          "word": "character"
+        }, {
+          "start_time": {
+            "seconds": 29,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 29,
+            "nanos": 600000000
+          },
+          "word": "limit"
+        }, {
+          "start_time": {
+            "seconds": 29,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 29,
+            "nanos": 900000000
+          },
+          "word": "of"
+        }, {
+          "start_time": {
+            "seconds": 29,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 30,
+            "nanos": 400000000
+          },
+          "word": "500"
+        }, {
+          "start_time": {
+            "seconds": 30,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 31
+          },
+          "word": "characters,"
+        }, {
+          "start_time": {
+            "seconds": 31
+          },
+          "end_time": {
+            "seconds": 31,
+            "nanos": 500000000
+          },
+          "word": "a"
+        }, {
+          "start_time": {
+            "seconds": 31,
+            "nanos": 500000000
+          },
+          "end_time": {
+            "seconds": 31,
+            "nanos": 700000000
+          },
+          "word": "to"
+        }, {
+          "start_time": {
+            "seconds": 31,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 32,
+            "nanos": 400000000
+          },
+          "word": "280"
+        }, {
+          "start_time": {
+            "seconds": 32,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 32,
+            "nanos": 800000000
+          },
+          "word": "character."
+        }, {
+          "start_time": {
+            "seconds": 32,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 33
+          },
+          "word": "Limit"
+        }, {
+          "start_time": {
+            "seconds": 33
+          },
+          "end_time": {
+            "seconds": 33,
+            "nanos": 400000000
+          },
+          "word": "of"
+        }, {
+          "start_time": {
+            "seconds": 33,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 33,
+            "nanos": 600000000
+          },
+          "word": "to"
+        }, {
+          "start_time": {
+            "seconds": 33,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 33,
+            "nanos": 800000000
+          },
+          "word": "do"
+        }, {
+          "start_time": {
+            "seconds": 33,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 35,
+            "nanos": 100000000
+          },
+          "word": "you"
+        }, {
+          "start_time": {
+            "seconds": 35,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 35,
+            "nanos": 400000000
+          },
+          "word": "use"
+        }, {
+          "start_time": {
+            "seconds": 35,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 35,
+            "nanos": 700000000
+          },
+          "word": "thread"
+        }, {
+          "start_time": {
+            "seconds": 35,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 36,
+            "nanos": 400000000
+          },
+          "word": "by"
+        }, {
+          "start_time": {
+            "seconds": 36,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 36,
+            "nanos": 700000000
+          },
+          "word": "female"
+        }, {
+          "start_time": {
+            "seconds": 36,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 37,
+            "nanos": 400000000
+          },
+          "word": "unmask,"
+        }, {
+          "start_time": {
+            "seconds": 37,
+            "nanos": 400000000
+          },
+          "end_time": {
+            "seconds": 37,
+            "nanos": 800000000
+          },
+          "word": "our"
+        }, {
+          "start_time": {
+            "seconds": 37,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 38,
+            "nanos": 200000000
+          },
+          "word": "team"
+        }, {
+          "start_time": {
+            "seconds": 38,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 38,
+            "nanos": 700000000
+          },
+          "word": "Mark"
+        }, {
+          "start_time": {
+            "seconds": 38,
+            "nanos": 700000000
+          },
+          "end_time": {
+            "seconds": 39,
+            "nanos": 200000000
+          },
+          "word": "Zuckerberg?"
+        }, {
+          "start_time": {
+            "seconds": 39,
+            "nanos": 200000000
+          },
+          "end_time": {
+            "seconds": 39,
+            "nanos": 600000000
+          },
+          "word": "Let"
+        }, {
+          "start_time": {
+            "seconds": 39,
+            "nanos": 600000000
+          },
+          "end_time": {
+            "seconds": 39,
+            "nanos": 800000000
+          },
+          "word": "me"
+        }, {
+          "start_time": {
+            "seconds": 39,
+            "nanos": 800000000
+          },
+          "end_time": {
+            "seconds": 39,
+            "nanos": 900000000
+          },
+          "word": "know"
+        }, {
+          "start_time": {
+            "seconds": 39,
+            "nanos": 900000000
+          },
+          "end_time": {
+            "seconds": 40
+          },
+          "word": "in"
+        }, {
+          "start_time": {
+            "seconds": 40
+          },
+          "end_time": {
+            "seconds": 40,
+            "nanos": 100000000
+          },
+          "word": "the"
+        }, {
+          "start_time": {
+            "seconds": 40,
+            "nanos": 100000000
+          },
+          "end_time": {
+            "seconds": 40,
+            "nanos": 300000000
+          },
+          "word": "comments."
+        } ]
+      } ],
+      "language_code": "en-us"
+    } ]
+  } ]
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IntelliVoice</title>
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #0E0D15, #1A1A2E);
+      color: #F0F0F0;
+    }
+
+    .app-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      background-color: #10101B;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .header:hover {
+      background-color: #1A1A2E;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      height: 40px;
+      animation: pulse 2s infinite;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #F0F0F0;
+      transition: color 0.3s;
+    }
+
+    .title:hover {
+      color: #B3B3B3;
+    }
+
+    .video-container {
+      grid-column: 1 / 2;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-container canvas {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.8;
+      left: 0;
+      pointer-events: none;
+    }
+
+    audio {
+      width: 100%;
+      background-color: #1A1A2E;
+      color: #F0F0F0;
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    audio::-webkit-media-controls-fullscreen-button {
+      display: none !important;
+    }
+
+    .upload-container {
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .upload-container h5 {
+      margin-bottom: 1rem;
+      color: #B3B3B3;
+    }
+
+    .upload-area {
+      width: 80%;
+      border: dashed #EDEDED 3px;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s, background-color 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .upload-area:hover {
+      border-color: #4285F4;
+      background-color: #4285F41A;
+    }
+
+    .upload-area p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .upload-area input {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      background-color: #1A1A2E;
+      color: #F0F0F0;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    .data-warning {
+      grid-column: 1 / -1;
+      background-color: #FFFFC3;
+      color: #333;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.5s;
+    }
+
+    .search-container {
+      grid-column: 1 / -1;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-container input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+      background-color: #1A1A2E;
+      color: #F0F0F0;
+      flex: 1;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .search-container input:focus {
+      background-color: #2B2B4E;
+      color: #F0F0F0;
+    }
+
+    .search-container button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .search-container button:hover {
+      background-color: #3367D6;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="app-container">
+    <header class="header">
+      <img class="logo" src="Assets\Images\image.png">
+      <span class="title">IntelliVoice</span>
+    </header>
+
+    <div class="video-container">
+      <canvas id="my_canvas" width="800" height="500"></canvas>
+      <audio id="audio" controls></audio>
+    </div>
+
+    <div class="upload-container">
+      <h5>Unlock the power of Audios with AI</h5>
+      <div class="upload-area" ondrop="drop_audio(event)" ondragover="drag_enter(event)">
+        <p>Your audio</p>
+        <input id="audio_input" type="file" accept="audio/*" />
+      </div>
+      <div class="upload-area" ondrop="drop_json(event)" ondragover="drag_enter(event)">
+        <p>Your .json</p>
+        <input id="json_input" type="file" accept="application/JSON" />
+      </div>
+      <p>Annotate videos using this script right <a target="_blank" href="https://colab.research.google.com/drive/18atVgKfkiGSTuZgTS2G27GMqmkwNmsRr?usp=sharing">here</a> if you want to run all features at once.</p>
+    </div>
+
+    <div v-if="data_misaligned" class="data-warning">
+      It looks like the json data doesn't align with the audio file, are you sure you have all of the right files uploaded?
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="search-input" v-model="searchWord" placeholder="Search for a word">
+      <button @click="searchTranscript">Search</button>
+    </div>
+
+    <speech-transcription-viz v-if="current_view == 'Speech Transcription'" id="speech_transcription" v-bind:json_data="json_data" v-bind:audio_info="audio_info" v-on:word-clicked="jump_audio">
+    </speech-transcription-viz>
+
+    <script src="utils/utils.js"></script>
+    <script src="components/speech_transcription.js"></script>
+
+    <script>
+      function jump_audio_to_time(time) {
+        const audio = document.querySelector('audio');
+        audio.currentTime = time;
+        audio.play();
+      }
+
+      var router = new VueRouter({
+        mode: 'history',
+      });
+
+      var app = new Vue({
+        router,
+        el: '#app',
+        data: {
+          json_data: {},
+          audio_info: { length: 0 },
+          current_view: 'Speech Transcription',
+          title_ids_dict: {
+            'Speech Transcription': 'speech_transcriptions',
+          },
+          searchWord: '',
+        },
+        methods: {
+          jump_audio: function (event_data) {
+            document.querySelector('audio').scrollIntoView({ 'behavior': 'smooth', 'block': 'center' });
+            jump_audio_to_time(event_data.seconds);
+          },
+          set_current_view: function (new_view) {
+            this.current_view = new_view;
+            router.push({ hash: '#' + new_view });
+          },
+          searchTranscript: function () {
+            if (!this.searchWord) return;
+            const lowercaseSearch = this.searchWord.toLowerCase();
+            let foundWord = null;
+
+            for (let speech of this.indexed_speech) {
+              for (let word of speech.words) {
+                if (word.word.toLowerCase().includes(lowercaseSearch)) {
+                  foundWord = word;
+                  break;
+                }
+              }
+              if (foundWord) break;
+            }
+
+            if (foundWord) {
+              this.jump_audio({ seconds: foundWord.start_time });
+            } else {
+              alert('Word not found in the transcript.');
+            }
+          }
+        },
+        computed: {
+          data_misaligned: function () {
+            if (this.json_data)
+              if (this.json_data.annotation_results) {
+                const delta = this.audio_info.length - this.json_data.annotation_results[0].segment.end_time_offset.seconds;
+                if (Math.abs(delta) > 2) {
+                  return true;
+                }
+              }
+            return false;
+          },
+          detected_features: function () {
+            var features = [];
+            if (!this.json_data.annotation_results)
+              return features;
+            this.json_data.annotation_results.forEach(annotations => {
+              features = features.concat(Object.keys(annotations));
+            });
+            return features;
+          },
+          indexed_speech: function () {
+            const indexed_speech = [];
+            if (this.json_data.annotation_results) {
+              for (let result of this.json_data.annotation_results) {
+                if (result.speech_transcriptions) {
+                  for (let transcription of result.speech_transcriptions) {
+                    if (transcription.alternatives && transcription.alternatives[0]) {
+                      indexed_speech.push(new Detected_Speech(transcription, 0));
+                    }
+                  }
+                }
+              }
+            }
+            return indexed_speech;
+          }
+        }
+      });
+
+      const URL = window.URL || window.URL;
+
+      function fetch_json(url) {
+        var json = null;
+        $.ajax({
+          'async': false,
+          'url': url,
+          'dataType': "json",
+          'success': function (data) {
+            json = data;
+          }
+        });
+        return json;
+      }
+
+      function load_audio_from_url(url) {
+        audio.src = url;
+      }
+
+      function load_audio_dragged(event) {
+        const file = this.files[0];
+        const file_url = URL.createObjectURL(file);
+        load_audio_from_url(file_url);
+      }
+
+      function load_json_from_url(url) {
+        var json = null;
+        $.ajax({
+          'async': false,
+          'url': url,
+          'dataType': "json",
+          'success': function (data) {
+            json = data;
+          }
+        });
+        json_data = json;
+        app.json_data = json_data;
+        if (!('annotation_results' in json_data)) {
+          alert("⚠️ Sorry, json output from shell not supported ⚠️ To fix set the 'output_uri' configuration when calling the Video Intelligence API so that it outputs a .json file to Google Cloud Storage, and then download that .json file. Find links to example script at the top right of the screen.");
+          json_input.value = null;
+        }
+      }
+
+      function load_json_dragged(event) {
+        const file = this.files[0];
+        const file_url = URL.createObjectURL(file);
+        load_json_from_url(file_url);
+      }
+
+      var json_data = {};
+      const audio = document.getElementById('audio');
+      const audio_input = document.getElementById('audio_input');
+      const json_input = document.getElementById('json_input');
+
+      audio.onloadedmetadata = function () {
+        app.audio_info.length = audio.duration;
+      };
+
+      function drag_enter(ev) {
+        ev.preventDefault();
+      }
+
+      function drop_audio(ev) {
+        ev.preventDefault();
+        audio_input.files = ev.dataTransfer.files;
+        audio_input.dispatchEvent(new Event('change'));
+      }
+
+      function drop_json(ev) {
+        ev.preventDefault();
+        json_input.files = ev.dataTransfer.files;
+        json_input.dispatchEvent(new Event('change'));
+      }
+
+      audio_input.addEventListener('change', load_audio_dragged, false);
+      json_input.addEventListener('change', load_json_dragged, false);
+
+      load_json_from_url("assets/test_json.json");
+      load_audio_from_url("assets/test_audio.mp3");
+    </script>
+  </div>
+</body>
+</html>
